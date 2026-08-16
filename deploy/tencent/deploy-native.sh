@@ -6,6 +6,13 @@ cd "$app_dir"
 test "$PWD" = "$app_dir"
 
 git pull --ff-only origin main
+app_version=$(git rev-parse --short HEAD)
+test -f .env.production
+if grep -q '^APP_VERSION=' .env.production; then
+  sed -i "s/^APP_VERSION=.*/APP_VERSION=$app_version/" .env.production
+else
+  printf '\nAPP_VERSION=%s\n' "$app_version" >> .env.production
+fi
 corepack enable
 corepack prepare pnpm@11.15.1 --activate
 pnpm install --frozen-lockfile
@@ -19,7 +26,8 @@ mkdir -p .next/standalone/.next/cache
 
 sudo install -m 0644 deploy/systemd/ai-global.service /etc/systemd/system/ai-global.service
 sudo systemctl daemon-reload
-sudo systemctl enable --now ai-global.service
+sudo systemctl enable ai-global.service
+sudo systemctl restart ai-global.service
 
 if sudo test -s /etc/nginx/ssl/aigoglobal.net.pem && sudo test -s /etc/nginx/ssl/aigoglobal.net.key; then
   sudo install -m 0644 deploy/nginx/aigoglobal.net.conf /etc/nginx/sites-available/aigoglobal.net
