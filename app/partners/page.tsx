@@ -1,0 +1,6 @@
+import type { Metadata } from "next";
+import { ApplicationForm } from "@/components/forms/application-form";
+import { ListingHero } from "@/components/content/listing-hero";
+import { pageMetadata } from "@/lib/metadata";
+export const metadata:Metadata=pageMetadata("生态合作伙伴","AI工具、SaaS、电商平台、支付物流、行业媒体、高校社群和技术服务合作。","/partners");
+export default function PartnersPage(){const types=["AI工具","SaaS产品","电商平台","支付与物流","海外营销机构","行业媒体","高校与社群","技术服务商"];return <><ListingHero eyebrow="Ecosystem" title="生态合作伙伴持续招募中" description="围绕内容、报告、活动、工具收录、企业需求和专业交付建立透明合作。未获得授权前不展示真实合作Logo。"/><section className="section-pad bg-[var(--paper)]"><div className="container-main grid gap-12 lg:grid-cols-[.75fr_1.25fr]"><div><h2 className="font-display text-4xl font-semibold">合作方向</h2><div className="mt-7 grid grid-cols-2 gap-2">{types.map(t=><span key={t} className="rounded-xl border border-[var(--line)] bg-white p-4 text-sm font-semibold">{t}</span>)}</div><p className="mt-6 text-xs leading-6 text-[var(--muted)]">付费推广、赞助和联盟关系将明确标注，不影响编辑内容的事实标准。</p></div><div className="rounded-[28px] border border-[var(--line)] bg-white p-7"><ApplicationForm kind="partner" typeOptions={["工具收录与推广","品牌内容合作","行业报告合作","活动赞助","服务商合作","企业需求撮合","招聘与人才合作"]} submitLabel="提交合作申请"/></div></div></section></>}

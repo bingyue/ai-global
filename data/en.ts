@@ -1,0 +1,21 @@
+export const enServices = [
+  { slug: "ai-website", name: "AI-powered Websites", title: "Build a high-converting website for global markets, faster", description: "From market insight and information architecture to localized content, design, development, SEO and deployment.", tags: ["Brand sites","Shopify","Multilingual"] },
+  { slug: "independent-site-growth", name: "Independent Site Growth", title: "Turn your independent site into a sustainable growth system", description: "Improve traffic, content, product pages, conversion, retention and lifecycle marketing as one connected system.", tags: ["CRO","Content","Automation"] },
+  { slug: "ai-advertising", name: "AI Advertising", title: "Increase creative velocity and advertising learning with AI", description: "Connect account diagnostics, creative operations, experiment design and data reviews across global ad channels.", tags: ["Creative ops","Google Ads","Meta Ads"] },
+  { slug: "global-marketing", name: "Global Marketing", title: "Build a global growth system for ambitious Chinese companies", description: "Market entry, positioning, content, social, search, paid acquisition and lead nurturing—designed as one system.", tags: ["Market entry","Global content","Brand growth"] },
+  { slug: "seo-geo", name: "SEO & GEO", title: "Help global buyers find and cite your brand", description: "Build search demand and AI visibility through technical foundations, useful content, clear entities and authority signals.", tags: ["Technical SEO","Content clusters","AI search"] },
+  { slug: "overseas-social-media", name: "Global Social Media", title: "Build a credible, human global social presence", description: "Create a consistent editorial system across LinkedIn, X, YouTube, TikTok, Instagram and relevant communities.", tags: ["Editorial system","Founder voice","Community"] },
+  { slug: "ai-product-global-launch", name: "AI Product Global Launch", title: "Make your global product launch last beyond launch day", description: "Positioning, website, pricing, community warm-up, launch execution and post-launch user activation.", tags: ["Product Hunt","Community","SaaS growth"] },
+  { slug: "enterprise-ai", name: "Enterprise AI Solutions", title: "Embed AI into real commerce and marketing workflows", description: "Digital workers, customer service, knowledge systems, automation, analytics and practical team enablement.", tags: ["Digital workers","Knowledge","Training"] },
+] as const;
+
+export const enServiceDeliverables: Record<string, string[]> = {
+  "ai-website": ["Market and competitor analysis", "Information architecture and conversion paths", "English and localized page copy", "Responsive UI design and development", "CMS, analytics and lead capture", "SEO, GEO and launch foundations"],
+  "independent-site-growth": ["Site and analytics audit", "Customer and competitor research", "Product page and content improvements", "SEO and GEO content clusters", "Conversion experiments", "Email and lifecycle automation"],
+  "ai-advertising": ["Account and tracking diagnostics", "Audience and keyword strategy", "AI-assisted creative variants", "Campaign and experiment design", "Budget and remarketing optimization", "CAC, CPL, ROAS and creative reviews"],
+  "global-marketing": ["Market-entry research", "Customer insight and positioning", "Multilingual content strategy", "Social, creator and media planning", "Search and paid acquisition", "Lead nurturing and measurement"],
+  "seo-geo": ["Search and AI visibility baseline", "Technical SEO audit", "Pillar pages and content clusters", "Brand entity and author systems", "Structured data and FAQs", "Authority signals and monitoring"],
+  "overseas-social-media": ["Audience and account positioning", "Platform strategy", "Editorial pillars and calendar", "Written and video content", "Community participation", "Performance reviews and asset library"],
+  "ai-product-global-launch": ["English product positioning", "Website, pricing and conversion paths", "Product Hunt launch preparation", "Community and social warm-up", "Launch-day operations", "Post-launch activation and growth plan"],
+  "enterprise-ai": ["AI opportunity and workflow audit", "Commerce and content digital workers", "Customer service and knowledge systems", "Marketing automation", "Analytics agents", "Governance, training and adoption"],
+};

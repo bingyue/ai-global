@@ -1,0 +1,9 @@
+import type { Metadata } from "next";
+import { ListingHero } from "@/components/content/listing-hero";
+import { TopicActions } from "@/components/community/topic-actions";
+import { ButtonLink } from "@/components/ui/button";
+import { communityTopics } from "@/data/resources";
+import { pageMetadata } from "@/lib/metadata";
+import { formatDate } from "@/lib/utils";
+export const metadata:Metadata=pageMetadata("社区主题","AI Global Club工具、独立站、广告、SEO/GEO、社媒、AI产品和合作讨论。","/community/topics");
+export default function TopicsPage(){return <><ListingHero eyebrow="Community Discussions" title="社区主题" description="围绕真实业务问题交流方法、工具、需求和机会。所有示例主题集中管理，生产环境默认开启基础审核。"/><section className="bg-[var(--paper)] py-16"><div className="container-main"><div className="mb-8 flex justify-between"><div className="flex flex-wrap gap-2">{["全部","工具交流","独立站","广告投放","SEO/GEO","品牌增长","合作机会"].map((c,i)=><span key={c} className={`rounded-full px-4 py-2 text-xs ${i===0?"bg-[var(--ink)] text-white":"border border-[var(--line)] bg-white"}`}>{c}</span>)}</div><ButtonLink href="/community/apply" size="sm">发布主题</ButtonLink></div><div className="space-y-3">{communityTopics.map(t=><article id={t.slug} key={t.slug} className="scroll-mt-28 rounded-[22px] border border-[var(--line)] bg-white p-6"><div className="flex flex-col justify-between gap-5 md:flex-row"><div><div className="flex gap-2"><span className="text-[10px] font-bold text-[var(--brand-dark)]">{t.category}</span>{t.featured&&<span className="text-[10px] font-bold text-[#ce5a10]">精选</span>}</div><h2 className="mt-3 text-xl font-semibold">{t.title}</h2><p className="mt-3 text-sm leading-6 text-[var(--muted)]">{t.excerpt}</p><p className="mt-4 text-xs text-[#8b9893]">{t.author} · {formatDate(t.publishedAt)}</p></div><div className="shrink-0"><TopicActions likes={t.likes} replies={t.replies}/></div></div></article>)}</div></div></section></>}

@@ -1,0 +1,52 @@
+{
+  "name": "ai-global",
+  "version": "1.0.0",
+  "private": true,
+  "packageManager": "pnpm@11.15.1",
+  "engines": {
+    "node": ">=20.9.0"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
+    "fetch:news": "tsx scripts/fetch-news.ts",
+    "normalize:news": "tsx scripts/normalize-news.ts",
+    "dedupe:news": "tsx scripts/deduplicate-news.ts",
+    "digest:daily": "tsx scripts/generate-daily-digest.ts",
+    "digest:weekly": "tsx scripts/generate-weekly-digest.ts",
+    "seed": "tsx scripts/seed-data.ts"
+  },
+  "dependencies": {
+    "@hookform/resolvers": "^5.2.2",
+    "@mdx-js/loader": "^3.1.1",
+    "@mdx-js/react": "^3.1.1",
+    "@next/mdx": "16.3.0",
+    "@supabase/supabase-js": "^2.57.4",
+    "@supabase/ssr": "^0.7.0",
+    "clsx": "^2.1.1",
+    "date-fns": "^4.1.0",
+    "fast-xml-parser": "^5.2.5",
+    "lucide-react": "^0.468.0",
+    "next": "16.3.0",
+    "react": "19.2.8",
+    "react-dom": "19.2.8",
+    "react-hook-form": "^7.62.0",
+    "tailwind-merge": "^3.3.1",
+    "zod": "^4.1.11"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.3.3",
+    "@types/node": "^22.18.8",
+    "@types/mdx": "^2.0.13",
+    "@types/react": "^19.1.16",
+    "@types/react-dom": "^19.1.9",
+    "eslint": "^9.36.0",
+    "eslint-config-next": "16.3.0",
+    "tailwindcss": "^4.3.3",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.3"
+  }
+}

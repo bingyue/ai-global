@@ -1,0 +1,1 @@
+export default function Loading(){return <div className="flex min-h-[50vh] items-center justify-center bg-[var(--paper)]"><div className="flex items-center gap-3 text-sm text-[var(--muted)]"><span className="size-2 animate-pulse rounded-full bg-[var(--brand)]"/>正在连接内容节点…</div></div>}
