@@ -38,4 +38,12 @@ sudo ln -sfn /etc/nginx/sites-available/aigoglobal.net /etc/nginx/sites-enabled/
 sudo nginx -t
 sudo systemctl reload nginx
 
-curl --fail --silent --show-error http://127.0.0.1:3000/api/health
+for attempt in $(seq 1 30); do
+  if curl --fail --silent --show-error --output /dev/null http://127.0.0.1:3000/api/health; then
+    exit 0
+  fi
+  sleep 1
+done
+
+echo "AI Global health check failed after 30 attempts." >&2
+exit 1
