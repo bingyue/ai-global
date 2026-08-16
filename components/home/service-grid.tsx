@@ -6,7 +6,7 @@ const icons = [PanelsTopLeft, Store, ChartNoAxesCombined, Globe2, SearchCheck, M
 
 export function ServiceGrid() {
   return <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-4">
-    {services.map((service, index) => { const Icon = icons[index]; return <Link key={service.slug} href={`/services/${service.slug}`} className="group relative min-h-[310px] overflow-hidden rounded-[26px] border border-[var(--line)] bg-white p-6 transition duration-300 hover:-translate-y-1 hover:border-[#b6d9cc] hover:shadow-[0_25px_60px_rgba(16,32,27,.08)]">
+    {services.map((service, index) => { const Icon = icons[index]; return <Link key={service.slug} href={`/services/${service.slug}`} className="group relative min-h-[310px] overflow-hidden rounded-[26px] border border-[var(--line)] bg-white p-6 transition duration-300 hover:-translate-y-1 hover:border-[#9fdbe4] hover:shadow-[0_25px_60px_rgba(18,33,43,.08)]">
       <span className="absolute right-5 top-5 font-mono text-[10px] tracking-[.15em] text-[#a1aca8]">0{index + 1}</span>
       <span className={`flex size-12 items-center justify-center rounded-2xl ${service.accent === "orange" ? "bg-[#fff0e6] text-[#d96517]" : service.accent === "blue" ? "bg-[#eaf2ff] text-[#226ad1]" : "bg-[var(--brand-wash)] text-[var(--brand-dark)]"}`}><Icon className="size-5" /></span>
       <h3 className="mt-8 text-xl font-bold tracking-[-.025em] text-[var(--ink)]">{service.name}</h3><p className="mt-3 text-sm leading-6 text-[var(--muted)]">{service.description}</p>

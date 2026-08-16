@@ -51,7 +51,7 @@ export function AuthForm({
   const Icon = mode === "login" ? LogIn : UserPlus;
   const success = message.includes("成功");
 
-  return <div className="rounded-[28px] border border-[var(--line)] bg-white p-7 shadow-[0_25px_60px_rgba(16,32,27,.06)] md:p-9">
+  return <div className="rounded-[28px] border border-[var(--line)] bg-white p-7 shadow-[0_25px_60px_rgba(18,33,43,.06)] md:p-9">
     <div className="flex size-12 items-center justify-center rounded-2xl bg-[var(--brand-wash)]"><Icon className="size-5 text-[var(--brand-dark)]" /></div>
     <h1 className="mt-6 font-display text-4xl font-semibold">{mode === "login" ? "登录AI Global" : "创建免费账户"}</h1>
     <p className="mt-3 text-sm leading-6 text-[var(--muted)]">{mode === "login" ? "访问收藏、会员知识和社区资料。" : "收藏内容、参与社区并获取会员知识入口。"}</p>

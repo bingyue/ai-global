@@ -1,9 +1,9 @@
 export const siteConfig = {
   name: "AI Global",
-  chineseName: "AI电商出海研究院",
+  chineseName: "AI出海研究院",
   domain: "aigoglobal.net",
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://aigoglobal.net",
-  title: "AI Global｜AI电商出海研究院",
+  title: "AI Global｜AI出海研究院",
   description:
     "聚合AI电商与品牌出海资讯、工具、知识和案例，提供AI建站、广告投放、SEO、GEO、海外社媒和AI出海营销服务。",
   slogan: "AI驱动，增长全球。",

@@ -8,7 +8,7 @@ import { ButtonLink } from "@/components/ui/button";
 
 export function Header() {
   return <>
-    {siteConfig.announcement.enabled && <Link href={siteConfig.announcement.href} className="relative z-50 block bg-[var(--brand)] px-5 py-2 text-center text-xs font-semibold text-[#052118] transition hover:bg-[var(--brand-bright)]"><span className="mr-2 rounded-full bg-[#052118] px-2 py-0.5 font-mono text-[9px] tracking-wider text-white">{siteConfig.announcement.label}</span>{siteConfig.announcement.text}<span aria-hidden className="ml-2">→</span></Link>}
+    {siteConfig.announcement.enabled && <Link href={siteConfig.announcement.href} className="relative z-50 block bg-[var(--brand)] px-5 py-2 text-center text-xs font-semibold text-[#061b24] transition hover:bg-[var(--brand-bright)]"><span className="mr-2 rounded-full bg-[#061b24] px-2 py-0.5 font-mono text-[9px] tracking-wider text-white">{siteConfig.announcement.label}</span>{siteConfig.announcement.text}<span aria-hidden className="ml-2">→</span></Link>}
     <header className="sticky top-0 z-50 border-b border-white/10 bg-[#071521ee] text-white backdrop-blur-xl">
       <div className="container-wide flex h-[72px] items-center justify-between gap-6">
         <Logo light />

@@ -69,7 +69,7 @@ export function AdminDashboard() {
           已启用服务端身份与角色校验。后台数据操作由 Supabase 持久化。
         </p>
       </aside>
-      <main className="bg-[#eef2ef] p-5 md:p-8">
+      <main className="bg-[#eef2f8] p-5 md:p-8">
         <div className="flex flex-col justify-between gap-3 md:flex-row md:items-center">
           <div>
             <p className="text-xs text-[var(--muted)]">管理后台 / {active}</p>

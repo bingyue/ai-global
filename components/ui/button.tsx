@@ -6,11 +6,11 @@ type Variant = "primary" | "secondary" | "outline" | "ghost" | "dark";
 type Size = "sm" | "md" | "lg" | "icon";
 
 const styles: Record<Variant, string> = {
-  primary: "bg-[var(--brand)] text-[#03130e] hover:bg-[var(--brand-bright)] shadow-[0_10px_28px_rgba(22,184,137,.2)]",
+  primary: "bg-[var(--brand)] text-[#061b24] hover:bg-[var(--brand-bright)] shadow-[0_10px_28px_rgba(39,211,226,.2)]",
   secondary: "bg-[var(--orange)] text-[#211006] hover:bg-[#ff9f62] shadow-[0_10px_28px_rgba(255,138,61,.18)]",
   outline: "border border-[var(--line)] bg-transparent text-current hover:border-[var(--brand)] hover:bg-[var(--brand-wash)]",
   ghost: "bg-transparent text-current hover:bg-black/[.05]",
-  dark: "bg-[var(--ink)] text-white hover:bg-[#16382e]",
+  dark: "bg-[var(--ink)] text-white hover:bg-[#1c3444]",
 };
 
 const sizes: Record<Size, string> = {

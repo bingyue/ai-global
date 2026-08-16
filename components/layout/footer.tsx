@@ -6,7 +6,7 @@ import { siteConfig } from "@/data/site-config";
 
 export function Footer() {
   return <footer className="relative overflow-hidden bg-[var(--ocean)] text-white">
-    <div className="absolute -right-24 top-10 size-80 rounded-full border border-[var(--brand)]/10" /><div className="absolute -right-8 top-24 size-52 rounded-full border border-[var(--orange)]/10" />
+    <div className="absolute -right-24 top-10 size-80 rounded-full border border-[var(--brand)]/10" /><div className="absolute -right-8 top-24 size-52 rounded-full border border-[var(--violet)]/15" />
     <div className="container-main relative py-16 md:py-20">
       <div className="grid gap-12 border-b border-white/10 pb-14 lg:grid-cols-[1.2fr_.8fr_.8fr_.8fr]">
         <div><Logo light /><p className="mt-6 max-w-sm text-sm leading-7 text-white/55">连接AI、电商与全球化增长的知识、工具、人才和商业服务。</p><p className="mt-5 font-display text-2xl text-[var(--brand)]">AI驱动，增长全球。</p></div>
