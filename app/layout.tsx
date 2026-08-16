@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
+import { FloatingActions } from "@/components/layout/floating-actions";
 import { JsonLd } from "@/components/seo/json-ld";
 import { absoluteUrl } from "@/lib/utils";
 import { siteConfig } from "@/data/site-config";
@@ -21,5 +22,5 @@ export const viewport: Viewport = { width: "device-width", initialScale: 1, them
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   const organization = { "@context": "https://schema.org", "@type": "Organization", "@id": `${siteConfig.url}/#organization`, name: siteConfig.name, alternateName: siteConfig.chineseName, url: siteConfig.url, logo: { "@type": "ImageObject", url: absoluteUrl("/icon.svg") }, description: siteConfig.description, email: siteConfig.email };
   const website = { "@context": "https://schema.org", "@type": "WebSite", name: siteConfig.name, alternateName: siteConfig.chineseName, url: siteConfig.url, potentialAction: { "@type": "SearchAction", target: `${absoluteUrl("/search")}?q={search_term_string}`, "query-input": "required name=search_term_string" } };
-  return <html lang="zh-CN"><body><JsonLd data={[organization, website]} /><Header /><main>{children}</main><Footer /></body></html>;
+  return <html lang="zh-CN"><body><JsonLd data={[organization, website]} /><Header /><main>{children}</main><Footer /><FloatingActions /></body></html>;
 }

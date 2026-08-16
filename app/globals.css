@@ -85,6 +85,16 @@ button, input, textarea, select { font: inherit; }
 .prose-global blockquote { margin: 2rem 0; border-left: 3px solid var(--brand-dark); background: var(--brand-wash); padding: 1.3rem 1.5rem; border-radius: 0 16px 16px 0; color: #174756; }
 .hide-scrollbar::-webkit-scrollbar { display: none; }
 .hide-scrollbar { scrollbar-width: none; }
+.floating-toolbar {
+  bottom: max(1rem, env(safe-area-inset-bottom));
+  left: 50%;
+  transform: translateX(-50%);
+}
+.floating-panel {
+  right: 1rem;
+  bottom: calc(5.75rem + env(safe-area-inset-bottom));
+  left: 1rem;
+}
 
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
@@ -93,4 +103,22 @@ button, input, textarea, select { font: inherit; }
 @media (max-width: 640px) {
   .container-wide, .container-main, .container-reading { width: calc(100% - 40px); }
   .section-pad { padding-block: 4.5rem; }
+}
+@media (min-width: 768px) {
+  .floating-toolbar {
+    right: 1rem;
+    bottom: auto;
+    left: auto;
+    top: 50%;
+    flex-direction: column;
+    transform: translateY(-50%);
+  }
+  .floating-panel {
+    right: 5.75rem;
+    bottom: auto;
+    left: auto;
+    top: 50%;
+    width: min(360px, calc(100vw - 7rem));
+    transform: translateY(-50%);
+  }
 }
