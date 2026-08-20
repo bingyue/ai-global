@@ -1,13 +1,13 @@
-# AI Global｜AI出海研究院
+# AI Global｜AI电商出海研究院
 
-面向中国企业、品牌、跨境商家、AI 创业者和出海从业者的垂直行业平台，统一承载：
+面向出海品牌、DTC 团队、跨境卖家和电商从业者的垂直行业平台，统一承载：
 
-- AI 出海行业资讯门户
-- AI 出海与全球增长知识库
-- AI 工具与服务资源导航
+- AI 电商出海行业资讯门户
+- AI 电商与跨境经营知识库
+- AI 电商工具与服务资源导航
 - 案例、研究报告、活动与课程
 - AI Global Club 轻社区与会员体系
-- AI 建站、广告投放、SEO/GEO、全球营销等企业服务
+- 跨境增长诊断、独立站、商品内容、广告、SEO/GEO 和电商自动化服务
 - 线索、投稿、合作申请、报告下载与运营后台
 
 品牌入口为 `https://aigoglobal.net`。网站内所有企业服务均由 AI Global 对外统一提供、组织或交付。
@@ -18,10 +18,10 @@
 
 已内置：
 
-- 20 条资讯、30 篇结构化知识内容、20 个真实工具
+- 20 条资讯、24 篇结构化知识内容、20 个真实工具
 - 8 个明确标注类型的案例、4 份报告、4 场活动、10 个社区主题
-- 8 个完整企业服务页面与对应英文核心页
-- 228+ 个静态/动态构建页面（实际数量会随内容增加）
+- 6 个完整AI电商服务页面与对应英文核心页
+- 203 个静态/动态构建页面（实际数量会随内容增加）
 - 全站搜索、RSS、Sitemap、robots.txt 和主要 Schema.org 结构化数据
 - 服务线索、邮件订阅、报告下载、报名、投稿和合作申请接口
 - Supabase 完整迁移、RLS、角色与 Vercel Cron
@@ -143,8 +143,8 @@ where id = (select id from auth.users where email = 'you@example.com');
   name: "Official Source",
   url: "https://example.com/feed.xml",
   type: "rss",
-  defaultCategory: "AI产品",
-  categorySlug: "ai-products",
+  defaultCategory: "AI电商趋势",
+  categorySlug: "ai-commerce",
   enabled: true,
   official: true,
 }

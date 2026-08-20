@@ -27,7 +27,7 @@ export function Header() {
         <div className="hidden items-center gap-2 lg:flex">
           <Link href="/search" className="flex size-10 items-center justify-center rounded-full text-white/70 transition hover:bg-white/10 hover:text-white" aria-label="全站搜索"><Search className="size-[18px]" /></Link>
           <Link href="/login" className="px-3 py-2 text-[13px] font-medium text-white/72 hover:text-white">登录</Link>
-          <ButtonLink href="/contact" size="sm">获取AI出海方案</ButtonLink>
+          <ButtonLink href="/contact" size="sm">获取AI电商方案</ButtonLink>
         </div>
         <MobileMenu />
       </div>

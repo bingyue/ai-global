@@ -1,13 +1,13 @@
 export const siteConfig = {
   name: "AI Global",
-  chineseName: "AI出海研究院",
+  chineseName: "AI电商出海研究院",
   domain: "aigoglobal.net",
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://aigoglobal.net",
-  title: "AI Global｜AI出海研究院",
+  title: "AI Global｜AI电商出海研究院",
   description:
-    "聚合AI出海、品牌全球化、AI产品国际化与跨境电商资讯、工具、知识和案例，为中国企业提供面向全球市场的AI增长服务。",
-  slogan: "AI驱动，增长全球。",
-  mission: "帮助更多中国企业、品牌和创造者，借助AI更高效地进入全球市场。",
+    "聚焦AI电商出海与跨境电商，提供行业资讯、实战知识、工具、案例、社群，以及独立站、商品内容、广告增长、SEO/GEO和电商自动化服务。",
+  slogan: "AI驱动，电商全球。",
+  mission: "帮助中国品牌与跨境卖家，把AI真正用进商品、内容、获客、转化和客户运营。",
   email: process.env.NEXT_PUBLIC_CONTACT_EMAIL ?? "hello@aigoglobal.net",
   wechat: process.env.NEXT_PUBLIC_WECHAT_ID ?? "AI Global",
   contact: {
@@ -17,7 +17,7 @@ export const siteConfig = {
   announcement: {
     enabled: true,
     label: "NEW",
-    text: "《2027 AI电商与品牌出海趋势报告》开放预约",
+    text: "《2027 AI电商出海趋势报告》开放预约",
     href: "/reports/ai-commerce-global-trends-2027",
   },
 } as const;

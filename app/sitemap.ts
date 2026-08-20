@@ -7,7 +7,7 @@ import { cases } from "@/data/cases";
 import { courses, events, reports } from "@/data/resources";
 import { services } from "@/data/services";
 
-const siteUpdatedAt = "2026-08-17";
+const siteUpdatedAt = "2026-08-20";
 const staticPaths = [
   "", "/news", "/knowledge", "/tools", "/cases", "/reports", "/community",
   "/community/membership", "/community/topics", "/community/members", "/community/opportunities",

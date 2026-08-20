@@ -178,7 +178,7 @@ export function AdminDashboard() {
             <div className="mt-6 rounded-xl border border-[var(--line)] p-4">
               <p className="text-xs text-[var(--muted)]">当前公告</p>
               <p className="mt-2 text-sm font-semibold">
-                《2027 AI电商与品牌出海趋势报告》开放预约
+                《2027 AI电商出海趋势报告》开放预约
               </p>
             </div>
           </div>

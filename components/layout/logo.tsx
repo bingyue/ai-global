@@ -8,7 +8,7 @@ export function Logo({ light = false, compact = false }: { light?: boolean; comp
     </span>
     <span className="leading-none">
       <span className={cn("block font-display text-[21px] font-semibold tracking-[-.04em]", light ? "text-white" : "text-[var(--ink)]")}>AI Global</span>
-      {!compact && <span className={cn("mt-1 block text-[9px] font-bold tracking-[.18em]", light ? "text-white/55" : "text-[var(--muted)]")}>AI出海研究院</span>}
+      {!compact && <span className={cn("mt-1 block text-[9px] font-bold tracking-[.18em]", light ? "text-white/55" : "text-[var(--muted)]")}>AI电商出海研究院</span>}
     </span>
   </Link>;
 }

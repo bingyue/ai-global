@@ -99,7 +99,7 @@ export function FloatingActions() {
     window.open(shareUrl, "_blank", "noopener,noreferrer,width=720,height=620");
   }
 
-  const panelTitle = active === "contact" ? "联系 AI Global" : active === "community" ? "加入 AI 出海社群" : "分享当前页面";
+  const panelTitle = active === "contact" ? "联系 AI Global" : active === "community" ? "加入 AI 电商出海社群" : "分享当前页面";
 
   return <>
     {active && <aside id="floating-action-panel" className="floating-panel fixed z-[80] overflow-hidden rounded-[26px] border border-white/70 bg-white/95 shadow-[0_24px_80px_rgba(7,21,33,.2)] backdrop-blur-xl" role="dialog" aria-modal="false" aria-label={panelTitle}>

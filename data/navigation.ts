@@ -10,12 +10,10 @@ export const navigation = [
 ] as const;
 
 export const serviceNavigation = [
-  { label: "AI智能建站", href: "/services/ai-website" },
-  { label: "独立站增长", href: "/services/independent-site-growth" },
-  { label: "AI广告投放", href: "/services/ai-advertising" },
-  { label: "AI出海营销", href: "/services/global-marketing" },
-  { label: "SEO与GEO", href: "/services/seo-geo" },
-  { label: "海外社媒运营", href: "/services/overseas-social-media" },
-  { label: "AI产品全球发布", href: "/services/ai-product-global-launch" },
-  { label: "企业AI解决方案", href: "/services/enterprise-ai" },
+  { label: "跨境电商增长诊断", href: "/services/cross-border-strategy" },
+  { label: "AI独立站建设与增长", href: "/services/ai-website" },
+  { label: "AI商品内容与视觉", href: "/services/product-content" },
+  { label: "AI广告创意与投放", href: "/services/ai-advertising" },
+  { label: "海外内容与SEO/GEO", href: "/services/seo-geo" },
+  { label: "AI电商自动化与客服", href: "/services/commerce-automation" },
 ] as const;

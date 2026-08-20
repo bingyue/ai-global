@@ -33,7 +33,7 @@ export function NewsletterForm({ compact = false }: { compact?: boolean }) {
 
   return <form onSubmit={onSubmit} className={compact ? "flex flex-col gap-3 sm:flex-row" : "grid gap-3 md:grid-cols-[1fr_1fr_1.2fr_auto]"}>
     {!compact && <Input name="name" placeholder="姓名（可选）" aria-label="姓名" maxLength={500} />}
-    {!compact && <Select name="interest" aria-label="关注领域"><option value="">关注领域（可选）</option><option>AI电商</option><option>AI产品出海</option><option>品牌全球化</option><option>SEO与GEO</option><option>企业AI</option></Select>}
+    {!compact && <Select name="interest" aria-label="关注领域"><option value="">关注领域（可选）</option><option>AI电商趋势</option><option>选品与商品内容</option><option>独立站增长</option><option>AI广告投放</option><option>SEO与GEO</option><option>智能客服与自动化</option></Select>}
     <div><Input name="email" type="email" placeholder="你的工作邮箱" aria-label="邮箱" required />{state.message && !state.ok && <p role="alert" className="mt-1 text-xs text-red-600">{state.message}</p>}</div>
     <Button type="submit" disabled={state.loading}>{state.loading ? "订阅中…" : "订阅精选"}<ArrowRight className="size-4" /></Button>
   </form>;

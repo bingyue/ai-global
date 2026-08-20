@@ -1,8 +1,8 @@
 import Link from "next/link";
-import { ArrowUpRight, Bot, ChartNoAxesCombined, Globe2, Megaphone, PanelsTopLeft, Rocket, SearchCheck, Store } from "lucide-react";
+import { ArrowUpRight, Bot, ChartNoAxesCombined, Images, Megaphone, PanelsTopLeft } from "lucide-react";
 import { services } from "@/data/services";
 
-const icons = [PanelsTopLeft, Store, ChartNoAxesCombined, Globe2, SearchCheck, Megaphone, Rocket, Bot];
+const icons = [ChartNoAxesCombined, PanelsTopLeft, Images, Megaphone, Megaphone, Bot];
 
 export function ServiceGrid() {
   return <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-4">
